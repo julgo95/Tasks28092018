@@ -1,0 +1,25 @@
+package dates.xml;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+
+public class App {
+	
+	public static void main(String[] args) throws ParseException {
+				App app = new App();
+				String literal = "2004-04-12T13:20:00-02:00";
+				Instant instant = app.parseDatetimestamp(literal);
+				System.out.println(instant);
+													}
+	public Instant parseDatetimestamp(String literal) throws ParseException {
+		SimpleDateFormat forma= new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssX");
+		Instant instant = forma.parse(literal).toInstant();
+		return instant;
+			}
+	public String parseDatimestamp(String input) throws ParseException {
+				return null;
+	}
+
+	
+	}
