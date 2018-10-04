@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/NewXMLSchema" xmlns:tns="http://www.example.org/NewXMLSchema" elementFormDefault="qualified">
+<xsd:complexType name="family">
+ <xsd:sequence>
+  <xsd:element name="ID" minOccurs="1" maxOccurs="2"/>
+  <xsd:element name="name" minOccurs="0" maxOccurs="unbounded"/>
+  <xsd:element name="birthdate" minOccurs="yyyy-MM-dd"/>
+  <xsd:element name="height" minOccurs="1 cm" maxOccurs="250 cm"/>
+  <xsd:element name="weight" minOccurs="1 kg" maxOccurs="300 kg"/>
+  <xsd:element name="trips" minOccurs="0" maxOccurs="unbounded"/>
+  <xsd:element name="date" minOccurs="yyyy-MM-dd"/>
+  <xsd:element name="location" minOccurs="0" maxOccurs="unbounded"/>
+  <xsd:element name="time" minOccurs="HH:mm"/>
+  <xsd:element name="transportation" minOccurs="0" maxOccurs="unbounded"/>       
+ </xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</schema>
